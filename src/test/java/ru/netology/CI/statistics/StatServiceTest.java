@@ -17,16 +17,20 @@ public class StatServiceTest {
 
         assertEquals(expected, actual);
     }
+
+    @Test
     void findMaxFirst() {
         StatService service = new StatService();
 
-        long[] incomesInBillions2 = {3,2,1};
+        long[] incomesInBillions2 = {3, 2, 1};
         long expected = 3;
 
         long actual = service.findMax(incomesInBillions2);
 
         assertEquals(expected, actual);
     }
+
+    @Test
     void findMaxLast() {
         StatService service = new StatService();
 
@@ -37,6 +41,7 @@ public class StatServiceTest {
 
         assertEquals(expected, actual);
     }
+    @Test
     void findMaxEquals() {
         StatService service = new StatService();
 
@@ -47,6 +52,7 @@ public class StatServiceTest {
 
         assertEquals(expected, actual);
     }
+    @Test
     void findMaxMiddle() {
         StatService service = new StatService();
 
